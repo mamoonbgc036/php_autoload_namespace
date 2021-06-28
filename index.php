@@ -1,16 +1,15 @@
 <?php 
 
 	function my_autoloader($class){
-		if(strpos($class, "app\\")!==false){
-			$x = str_replace("app\\", "", $class);
-			include_once $x.".php";
-		}else{
-			include_once str_replace("\\", "/", $class).".php";
-		    //echo str_replace("\\", "/", $class).".php";die();
-		}
+		include_once str_replace("app\\", "", $class).".php";
 	}
 
 	spl_autoload_register("my_autoloader");
 
+	//require_once "vendor/autoload.php";
+
+	new app\animals\dog();
+	print "<br/>";
+	new app\humans\teacher();
+
 	new app\dog();
-	new animals\dog();

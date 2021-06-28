@@ -1,8 +1,8 @@
 <?php 
 
-namespace humans;
+namespace app\humans;
 
-class Teacher{
+class teacher{
 	public function __construct(){
 		echo "i am a teacher";
 	}

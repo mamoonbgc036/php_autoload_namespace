@@ -1,5 +1,5 @@
 <?php 
-namespace animals;
+namespace app\animals;
 
 class dog{
 	public function __construct(){

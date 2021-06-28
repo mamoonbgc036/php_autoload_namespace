@@ -1,0 +1,15 @@
+{
+    "name": "autoload/namespacer",
+    "authors": [
+        {
+            "name": "Abdullah Al Mamoon",
+            "email": "mamoon036@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "app\\" : ""
+        }
+    }
+}
