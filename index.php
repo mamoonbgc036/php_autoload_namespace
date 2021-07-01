@@ -1,15 +1,15 @@
 <?php 
-
+	namespace app;
 	function my_autoloader($class){
 		include_once str_replace("app\\", "", $class).".php";
 	}
 
-	spl_autoload_register("my_autoloader");
+	spl_autoload_register("app\my_autoloader");
 
 	//require_once "vendor/autoload.php";
 
-	new app\animals\dog();
+	new animals\dog();
 	print "<br/>";
-	new app\humans\teacher();
+	 new humans\teacher();
 
-	new app\dog();
+	 new dog();
